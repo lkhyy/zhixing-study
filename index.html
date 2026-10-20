@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="知行卡片"><meta name="theme-color" content="#823b38">
+<meta name="description" content="知行：教材问答与马理论专业课练习卡片与个人收藏夹。"><title>知行 · 学习卡片</title>
+<link rel="manifest" href="manifest.webmanifest"><link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23823b38'/%3E%3Ctext x='12' y='45' fill='%23fff9ed' font-size='40'%3E知%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="cards.css">
+</head>
+<body>
+<noscript>请用允许JavaScript的电脑浏览器打开本应用。</noscript>
+<aside class="sidebar">
+ <a class="brand" href="#today"><span class="seal">知</span><span>知行<small>一张一张，记住。</small></span></a>
+ <div class="side-label">MY CARD SPACE</div>
+ <nav class="main-nav" aria-label="主导航">
+ <a href="#today" data-nav="today"><span class="nav-icon">◫</span>学习卡片<em id="card-count">631</em></a>
+ <a href="#favorites" data-nav="favorites"><span class="nav-icon">☆</span>收藏夹<em id="favorite-count">0</em></a>
+ </nav>
+ <div class="side-note"><p>先回忆<br>再理解</p><small>收藏和回答保存在当前设备</small></div>
+</aside>
+<div class="workspace">
+ <header class="topbar"><div class="breadcrumb">我的卡片<span>/</span><b id="breadcrumb">学习卡片</b></div><small>马理论 · 个人学习</small></header>
+ <div id="storage-warning" role="alert" hidden></div><div id="update-banner" hidden></div>
+ <main id="main"><p>正在打开卡片… 请完整解压后打开index.html，或使用单文件版。</p></main>
+ <footer class="app-footer"><span>知行 · 让每一次回忆，都留下痕迹。</span><span>卡片与收藏夹 · 2026.10.20</span></footer>
+</div>
+<dialog id="study-dialog" aria-labelledby="study-title"></dialog><div class="toast" id="toast" role="status"></div>
+<script src="question-bank.js"></script><script src="storage.js"></script><script src="review.js"></script><script src="cards-app.js"></script>
+</body>
+</html>
